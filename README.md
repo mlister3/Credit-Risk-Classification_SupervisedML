@@ -30,13 +30,13 @@ Open the starter code notebook and use it to complete the following steps:
 
 3. Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
 
-- Evaluate the model’s performance by doing the following:
+    - Evaluate the model’s performance by doing the following:
 
-- Calculate the accuracy score of the model.
+    - Calculate the accuracy score of the model.
 
-- Generate a confusion matrix.
+    - Generate a confusion matrix.
 
-- Print the classification report.
+    - Print the classification report.
 
 4. Answer the following question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
