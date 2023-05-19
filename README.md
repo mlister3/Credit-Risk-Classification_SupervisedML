@@ -40,17 +40,21 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 ### Machine Learning Model 1:
 - Model was trained on a data sample of the original dataset.
 - Prediciton Satisitics:
+
 ![ClassificationMatrix1](/Credit_Risk/classification_reports_screen_shots/Screenshot_Model_1.png)
 
 - Results of the model on testing sample:
+
 ![CM1](/Credit_Risk/classification_reports_screen_shots/Screenshot_CM_1.png)
 
 ### Machine Learning Model 2:
 - Model was trained on a resampled dataset of the training dataset.
 - Prediciton Satisitics:
+
 ![ClassificationMatrix2](/Credit_Risk/classification_reports_screen_shots/Screenshot_Model_2.png)
 
 - Results of the model on testing sample:
+
 ![CM2](/Credit_Risk/classification_reports_screen_shots/Screenshot_CM_2.png)
 
 
