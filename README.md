@@ -60,11 +60,13 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+* Out of the two instances of the logistic regression models, the instance trained with the resampled training data performed better in predicting instances of `1`'s or "high-risk loans." Both models performed similarly when predicting `0`'s or "healthy loans." The samples for healthy loans is far larger than that for high risk loans. The initial model did not get enough training to both accurately and precisely predict high-risk loans. 
 
-If you do not recommend any of the models, please justify your reasoning.
+* In the case of this being an internal tool, the model would need to produce false negatives as little as possible. A false positive would mean a risky loan would possibly be approved and the lender would be at higher risk for their consideration to be defaulted on.
+
+* In the case that this would be a public tool on the institution's website for customers to check to see if their loan application would be accepted or rejected before applying, the model would produce as little false positives as possible meaning no early rejections discouraging customers from applying to loans.
+
+* This model is accurate enough and has a 1.0 recall on both possible results meaning low false negatives. But, because of the mediocre 87% precision on predicting high-risk loans, I can't fully recommend either of these models as a replacement for individuals reviewing the application manually. Implimenting this model will greatly increase the speed of processing but because of the existince of false positives, the model may have a higher than wanted rate of rejecting applications and lost lenders income for rejecting healthy loan applications. For the same reason, I an 100% confident that this should not be used as a public tool. It comes down to finances when it comes to use as an internal tool. What is cheaper for the insitution, a large staff or a lost revenues from lost opportunities? Once that is determined, the use of the 2nd instance of the model as an internal tool may be applicable.
 
 - - -
 
