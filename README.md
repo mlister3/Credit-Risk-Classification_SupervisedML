@@ -6,7 +6,7 @@
 
 - Purpose
 
-The purpose of this analysis is to review the Logisitc Regression Machine Learning Model in use for prodicting if a loan would be a good investment for a lender based off 1.loan size, 2.interest rate, 3.income, 4.debt-to-income ratio, 5.number of accounts, 6.derogatory marks, and 7.total_debt. 
+The purpose of this analysis is to review the Logistic Regression Machine Learning Model in use for predicting if a loan would be a good investment for a lender based off 1.loan size, 2.interest rate, 3.income, 4.debt-to-income ratio, 5.number of accounts, 6.derogatory marks, and 7.total_debt. 
 
 - What is being predicted?
 
@@ -14,12 +14,12 @@ Using a dataset from a peer-to-peer lending services company that provides sampl
 
 - Goal
 
-Idealy I would like to see an accuracy rate as close to 100% as possible with a low false-positive rate which would get customer loan applications rejected and a low false-negative rate which would be bad for the financial institution's bottom line.
+Ideally I would like to see an accuracy rate as close to 100% as possible with a low false-positive rate which would get customer loan applications rejected and a low false-negative rate which would be bad for the financial institution's bottom line.
 
 - Steps
 1. Load dataset.
 2. Split data into portions; data to train the model with and data to test the model once trained.
-3. Sample test with training data to pick optimal solver for logisitic regression model.
+3. Sample test with training data to pick optimal solver for logistic regression model.
 4. Train model with original training data.
 5. Test trained model on test dataset.
 6. Resample the training data & ensure equal number of data points.
@@ -42,7 +42,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ### Machine Learning Model 1:
 - Model was trained on a data sample of the original dataset.
-- Prediciton Satisitics:
+- Prediction Statistics:
 
 ![ClassificationMatrix1](/Credit_Risk/classification_reports_screen_shots/Screenshot_Model_1.png)
 
@@ -52,7 +52,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ### Machine Learning Model 2:
 - Model was trained on a resampled dataset of the training dataset.
-- Prediciton Satisitics:
+- Prediction Statistics:
 
 ![ClassificationMatrix2](/Credit_Risk/classification_reports_screen_shots/Screenshot_Model_2.png)
 
@@ -69,7 +69,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * In the case that this would be a public tool on the institution's website for customers to check to see if their loan application would be accepted or rejected before applying, the model would produce as little false positives as possible meaning no early rejections discouraging customers from applying to loans.
 
-* This model is accurate enough and has a 1.0 recall on both possible results meaning low false negatives. But, because of the mediocre 87% precision on predicting high-risk loans, I can't fully recommend either of these models as a replacement for individuals reviewing the application manually. Implimenting this model will greatly increase the speed of processing but because of the existince of false positives, the model may have a higher than wanted rate of rejecting applications and lost lenders income for rejecting healthy loan applications. For the same reason, I an 100% confident that this should not be used as a public tool. It comes down to finances when it comes to use as an internal tool. What is cheaper for the insitution, a large staff or a lost revenues from lost opportunities? Once that is determined, the use of the 2nd instance of the model as an internal tool may be applicable.
+* This model is accurate enough and has a 1.0 recall on both possible results meaning low false negatives. But, because of the mediocre 87% precision on predicting high-risk loans, I can't fully recommend either of these models as a replacement for individuals reviewing the application manually. Implementing this model will greatly increase the speed of processing but because of the existince of false positives, the model may have a higher than wanted rate of rejecting applications and lost lenders income for rejecting healthy loan applications. For the same reason, I am 100% confident that this should not be used as a public tool. It comes down to finances when it comes to use as an internal tool. What is cheaper for the institution, a large staff or lost revenues from lost opportunities? Once that is determined, the use of the 2nd instance of the model as an internal tool may be applicable.
 
 - - -
 
