@@ -5,12 +5,15 @@
 ## Overview of the Analysis
 
 - Purpose
-The porpose of this analysis is to review the Logisitc Regression Machine Learning Model in use for prodicting if a loan would be a good investment for a lender based off 1.loan size, 2.interest rate, 3.income, 4.debt-to-income ratio, 5.number of accounts, 6.derogatory marks, and 7.total_debt. 
+
+The purpose of this analysis is to review the Logisitc Regression Machine Learning Model in use for prodicting if a loan would be a good investment for a lender based off 1.loan size, 2.interest rate, 3.income, 4.debt-to-income ratio, 5.number of accounts, 6.derogatory marks, and 7.total_debt. 
 
 - What is being predicted?
+
 Using a dataset from a peer-to-peer lending services company that provides samples and a target column labeled `loan_status` we will be training the model to predict with a `0` being a "healthy loan" or a `1` being a "high-risk loan" on a separate portion of the data that will not be used in the training process.
 
 - Goal
+
 Idealy I would like to see an accuracy rate as close to 100% as possible with a low false-positive rate which would get customer loan applications rejected and a low false-negative rate which would be bad for the financial institution's bottom line.
 
 - Steps
